@@ -1,0 +1,18 @@
+<div class="row">
+
+<%= form_for(@report, :html => {:class => "col s12"}, :url =>{:action => 'create'}) do |f|  %>
+
+    <%= f.label :title %>
+  <p><%= f.text_field :title %></p>
+    <%= f.label :detail %>
+  <p><%= f.text_area :detail, size: "60x12" %></p>
+
+ <%= f.submit "書き込む" %>
+<% end %>
+
+</div>
+
+<hr>
+<%= link_to "トップへ", root_path %>
+
+
